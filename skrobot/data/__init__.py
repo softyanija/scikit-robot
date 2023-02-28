@@ -58,3 +58,16 @@ def pr2_urdfpath():
         quiet=True,
     )
     return osp.join(get_cache_dir(), 'pr2_description', 'pr2.urdf')
+
+def pr2hand_urdfpath():
+    #WIP
+    """
+    gdown.cached_download(
+        url='https://github.com/softyanija/scikit-robot-models/raw/master/pr2_description.tar.gz',  # NOQA
+        path=osp.join(get_cache_dir(), 'pr2_description.tar.gz'),
+        md5='e4fb915accdb3568a5524c92e9c35c9a',
+        postprocess=gdown.extractall,
+        quiet=True,
+    )
+    """
+    return osp.join(get_cache_dir(), 'pr2hand_description', 'pr2hand.urdf')
