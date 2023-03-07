@@ -51,7 +51,7 @@ def panda_urdfpath():
 
 def pr2_urdfpath():
     gdown.cached_download(
-        url='https://github.com/iory/scikit-robot-models/raw/master/pr2_description.tar.gz',  # NOQA
+        url='https://github.com/softyanija/scikit-robot-models/raw/master/pr2_description.tar.gz',  # NOQA
         path=osp.join(get_cache_dir(), 'pr2_description.tar.gz'),
         md5='e4fb915accdb3568a5524c92e9c35c9a',
         postprocess=gdown.extractall,
@@ -70,4 +70,4 @@ def pr2hand_urdfpath():
         quiet=True,
     )
     """
-    return osp.join(get_cache_dir(), 'pr2hand_description', 'pr2hand.urdf')
+    return osp.join('/home/amabe/make_pr2hand_keypointsDataset/scikit-robot-models/scikit-robot-models', 'pr2hand_description', 'pr2hand.urdf')
