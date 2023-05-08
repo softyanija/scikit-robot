@@ -70,4 +70,4 @@ def pr2hand_urdfpath():
         quiet=True,
     )
     """
-    return osp.join('/home/amabe/robothand_dataset/scikit-robot-models', 'pr2hand', 'pr2hand.urdf')
+    return osp.join('/home/amabe/robothand_dataset_ws/src/scikit-robot-models', 'pr2hand', 'pr2hand.urdf')
